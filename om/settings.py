@@ -64,7 +64,7 @@ STATIC_ROOT = ''
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = 'https://s3.amazonaws.com/django-blog/'
+STATIC_URL = 'https://s3.amazonaws.com/BUCKET/'
 
 
 # URL prefix for admin static files -- CSS, JavaScript and images.
@@ -123,7 +123,7 @@ STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 
 AWS_ACCESS_KEY_ID = 'ACCESS KEY'
 AWS_SECRET_ACCESS_KEY = 'SECRET KEY'
-AWS_STORAGE_BUCKET_NAME = 'django-blog'
+AWS_STORAGE_BUCKET_NAME = 'BUCKET'
 
 
 INSTALLED_APPS = (
@@ -141,6 +141,8 @@ INSTALLED_APPS = (
 	'storages',
 
 )
+
+from settings_local import * 
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
