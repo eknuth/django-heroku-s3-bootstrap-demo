@@ -38,7 +38,9 @@ Create an s3 bucket and add your AWS keys and info to settings.py.
 Deploy your static files
 ------------------------
 
-*  heroku run python om/manage.py collectstatic
+*  python om/manage.py collectstatic
+
+This command is run locally.  No need to involve heroku.
 
 And you are ready to go
 -----------------------
